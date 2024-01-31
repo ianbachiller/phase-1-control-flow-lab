@@ -17,30 +17,27 @@ function scuberGreetingForFeet(ride){
 let ride;
 scuberGreetingForFeet(ride)
 
-function ternaryCheckCity(city){
+function ternaryCheckCity(city) {
   // Write your code here!
-  if(city.toUpperCase() === "NYC"){
-    return 'Ok, sounds good.'
-  }
-  else{
-    return 'No go.'
-  }
-
+  const a = 'Ok, sounds good.';
+  const b = "No go.";
+  return city.toUpperCase() === "NYC" ?  a:b;
 }
 let city;
-ternaryCheckCity(city)
+ternaryCheckCity(city);
+
+
 
 function switchOnCharmFromTip(tip){
   // Write your code here!
-  if(tip.toLowerCase() === "generous"){
-    return 'Thank you so much.'
-  }
-  if(tip.toLowerCase() === "not as generous"){
-    return 'Thank you.'
-  }
-  else{
-    return 'Bye.'
-  }
+  switch (tip){
+    case "generous":
+      return 'Thank you so much.';
+    case "not as generous":
+      return 'Thank you.';
+    default:
+      return 'Bye.';
+  } 
 }
 let tip;
 switchOnCharmFromTip(tip);
